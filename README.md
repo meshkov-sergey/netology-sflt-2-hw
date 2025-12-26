@@ -22,8 +22,7 @@
     ```
 
 3.  **Проверка работы серверов:**
-
-    ![Скриншот терминала](img/screenshot-cli.png)
+![Скриншот терминала](img/screenshot-cli.png)
 
 4.  **Установка HAProxy:**
     ```bash
@@ -77,7 +76,6 @@
     ```
 
 3.  **Проверка работы серверов:**
-
 ![Скриншот терминала](img/Screenshot-cli-servers.png)
 
 4.  **Конфигурация HAProxy для Weighted Round Robin (файл `/etc/haproxy/haproxy.cfg`):**
