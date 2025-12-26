@@ -77,6 +77,7 @@
     ```
 
 3.  **Проверка работы серверов:**
+
 ![Скриншот терминала](img/Screenshot-cli-servers.png)
 
 4.  **Конфигурация HAProxy для Weighted Round Robin (файл `/etc/haproxy/haproxy.cfg`):**
@@ -108,13 +109,12 @@
     for i in {1..12}; do curl -H "Host: example.local" http://127.0.0.1:8088; echo "---"; sleep 0.3; done
     ```
     **Пример вывода (пропорция ~2:3:4):**
-![Демонстрация WRR балансировки](img/Screenshot-cli-demo.png)
+![Демонстрация WRR балансировки](img/wrr_balancing.png)
 
 7.  **Проверка избирательности балансировки:**
     ```bash
     # Запрос БЕЗ домена - не балансируется
     curl http://127.0.0.1:8088
-    # Вывод: 503 Service Unavailable (No server is available...)
     ```
     ![Проверка ACL по домену](img/acl_check.png)
 
