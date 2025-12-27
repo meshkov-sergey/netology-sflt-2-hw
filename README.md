@@ -118,4 +118,6 @@
     ```
     ![Проверка ACL по домену](img/acl_check.png)
 
+### Файлы для задания 2:
+- [haproxy2.cfg](files/haproxy2.cfg) - конфигурационный файл HAProxy с секцией `Weighted Round Robin`.
 ---
